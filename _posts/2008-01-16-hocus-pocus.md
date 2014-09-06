@@ -12,7 +12,7 @@ blogger_permalink:
 tweet_this_url:
   - http://is.gd/UTAexR
 categories:
-  - Uncategorized
+  - Music
 ---
 In the coming weeks I will be highlighting some of the songs that I think are really cool, especially live. This week, we&#8217;ll be looking at a Dutch group from the early seventies called [Focus][1]. I haven&#8217;t heard anything else by them, ever. This is the only song that I have ever heard and I have to say, I even like this version better than the album version. The great things about this video are:
 
@@ -27,6 +27,5 @@ Take a listen (and watch it too, for pure entertainment value) and let me know w
   <br />
 </center>
 
-<span class='st\_facebook\_vcount' st\_title='Hocus Pocus' st\_url='http://earl-of-code.com/2008/01/hocus-pocus/' displayText='facebook'></span><span class='st\_twitter\_vcount' st\_title='Hocus Pocus' st\_url='http://earl-of-code.com/2008/01/hocus-pocus/' displayText='twitter'></span><span class='st\_linkedin\_vcount' st\_title='Hocus Pocus' st\_url='http://earl-of-code.com/2008/01/hocus-pocus/' displayText='linkedin'></span><span class='st\_email\_vcount' st\_title='Hocus Pocus' st\_url='http://earl-of-code.com/2008/01/hocus-pocus/' displayText='email'></span><span class='st\_sharethis\_vcount' st\_title='Hocus Pocus' st\_url='http://earl-of-code.com/2008/01/hocus-pocus/' displayText='sharethis'></span><span class='st\_fblike\_vcount' st\_title='Hocus Pocus' st\_url='http://earl-of-code.com/2008/01/hocus-pocus/' displayText='fblike'></span><span class='st\_plusone\_vcount' st\_title='Hocus Pocus' st\_url='http://earl-of-code.com/2008/01/hocus-pocus/' displayText='plusone'></span><span class='st\_pinterest\_vcount' st\_title='Hocus Pocus' st\_url='http://earl-of-code.com/2008/01/hocus-pocus/' displayText='pinterest'></span>
 
  [1]: http://en.wikipedia.org/wiki/Focus_%28band%29
