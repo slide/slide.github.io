@@ -50,8 +50,6 @@ Then in my classes I can do stuff like this to get option values:
 
 to retrieve the value. If I used DECLARE\_DEFAULT\_OPTION, it automatically sets up the default value since the boost library sets that up. If I don&#8217;t, then I&#8217;d probably call the getValue overload that takes a default value.
 
-<span class='st\_facebook\_vcount' st\_title='C++ is fun again!' st\_url='http://earl-of-code.com/2008/10/c-is-fun-again/' displayText='facebook'></span><span class='st\_twitter\_vcount' st\_title='C++ is fun again!' st\_url='http://earl-of-code.com/2008/10/c-is-fun-again/' displayText='twitter'></span><span class='st\_linkedin\_vcount' st\_title='C++ is fun again!' st\_url='http://earl-of-code.com/2008/10/c-is-fun-again/' displayText='linkedin'></span><span class='st\_email\_vcount' st\_title='C++ is fun again!' st\_url='http://earl-of-code.com/2008/10/c-is-fun-again/' displayText='email'></span><span class='st\_sharethis\_vcount' st\_title='C++ is fun again!' st\_url='http://earl-of-code.com/2008/10/c-is-fun-again/' displayText='sharethis'></span><span class='st\_fblike\_vcount' st\_title='C++ is fun again!' st\_url='http://earl-of-code.com/2008/10/c-is-fun-again/' displayText='fblike'></span><span class='st\_plusone\_vcount' st\_title='C++ is fun again!' st\_url='http://earl-of-code.com/2008/10/c-is-fun-again/' displayText='plusone'></span><span class='st\_pinterest\_vcount' st\_title='C++ is fun again!' st\_url='http://earl-of-code.com/2008/10/c-is-fun-again/' displayText='pinterest'></span>
-
  [1]: http://www.boost.org/
  [2]: http://www.boost.org/doc/libs/1_36_0/doc/html/any.html
  [3]: http://www.boost.org/doc/libs/1_36_0/libs/filesystem/doc/index.htm
