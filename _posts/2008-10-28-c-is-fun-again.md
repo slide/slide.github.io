@@ -46,7 +46,7 @@ I could probably just have an overload of parseOptions with no parameter and hav
 
 Then in my classes I can do stuff like this to get option values:
 
-```c++
+```cpp
 _testid = OptionsParser::getValue&lt;int&gt;("test-id");
 ```
 
