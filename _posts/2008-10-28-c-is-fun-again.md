@@ -46,9 +46,9 @@ I could probably just have an overload of parseOptions with no parameter and hav
 
 Then in my classes I can do stuff like this to get option values:
 
-```cpp
+{% highlight cpp %}
 _testid = OptionsParser::getValue&lt;int&gt;("test-id");
-```
+{% endhighlight %}
 
 to retrieve the value. If I used DECLARE\_DEFAULT\_OPTION, it automatically sets up the default value since the boost library sets that up. If I don&#8217;t, then I&#8217;d probably call the getValue overload that takes a default value.
 
