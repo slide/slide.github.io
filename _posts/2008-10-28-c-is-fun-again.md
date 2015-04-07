@@ -14,15 +14,56 @@ tweet_this_url:
 categories:
   - Uncategorized
 ---
-Lately at work I&#8217;ve been playing around with C++ and the [Boost][1] libraries; specifically I have been using [Boost.Any][2], [Boost.Filesystem][3], [Boost.Program_ptions][4], [Boost.Python][5], and last but not least [Boost smart pointers][6].
+Lately at work I've been playing around with C++ and the [Boost][1] libraries; specifically I have been using [Boost.Any][2], [Boost.Filesystem][3], [Boost.ProgramOptions][4], [Boost.Python][5], and last but not least [Boost smart pointers][6].
 
 These libraries, in conjunction with some of my own macros and setup have made for a very nice transition back to C++ from C#. The awesome things about C# are the class libraries and the syntactic sugar (foreach, lambdas, anonymous methods). Similar things can be done with C++ and Boost (Boost.Foreach, etc). 
 
-I&#8217;m going to talk about the way I&#8217;ve setup my command line options parsing, to give you an idea as to how I am using Boost.
+I'm going to talk about the way I've setup my command line options parsing, to give you an idea as to how I am using Boost.
 
 First off, I have a static class called OptionsParser which looks like this:
 
-<pre class="c++" name="code">class OptionsParser <br />{<br />public:<br />  static bool isParsed(void);<br />  static void parseOptions(const std::vector&lt;std::string&gt;& options);<br />  static void registerOptions(const std::string& owner, const boost::program_options::options_description& options);<br />  static void printAllOptions(std::ostream& output);<br />  static const std::vector&lt;std::string&gt; getUnrecognizedOptions(void) const;<br /><br />  template&lt;class T&gt;<br />  static T getValue(const std::string& option, T def)<br />  {<br />    T result = def;<br />    if(!isParsed())<br />      throw std::exception("You must call parseOptions before trying to retrieve values");<br /><br />    if(_variables_map.count(option))<br />      result = _variables_map[option].as&lt;T&gt;();<br /><br />    return result;<br />  }<br /><br />  template&lt;class T&gt;<br />  static T getValue(const std::string& option)<br />  {<br />    T result;<br />    if(!isParsed())<br />      throw std::exception("You must call parseOptions before trying to retrieve values");<br /><br />    if(_variables_map.count(option))<br />      result = _variables_map[option].as&lt;T&gt;();<br /><br />    return result;<br />  }<br /><br />private:<br />  OptionsParser();<br /><br />  static boost::program_options::variables_map _variables_map;<br />  static bool _parsed;<br />  static std::vector&lt;std::string&gt; _unrecognized;<br />  static boost::program_options::options_description* _all_options;<br />};<br /></pre>
+{% highlight cpp %}
+class OptionsParser 
+{
+public:
+  static bool isParsed(void);
+  static void parseOptions(const std::vector<std::string>& options);
+  static void registerOptions(const std::string& owner, const boost::program_options::options_description& options);
+  static void printAllOptions(std::ostream& output);
+  static const std::vector<std::string> getUnrecognizedOptions(void) const;
+
+  template<class T>
+  static T getValue(const std::string& option, T def)
+  {
+    T result = def;
+    if(!isParsed())
+      throw std::exception("You must call parseOptions before trying to retrieve values");
+    if(_variables_map.count(option))
+      result = _variables_map[option].as<T>();
+
+    return result;
+  }
+
+  template<class T>
+  static T getValue(const std::string& option)
+  {
+    T result;
+    if(!isParsed())
+      throw std::exception("You must call parseOptions before trying to retrieve values");
+
+    if(_variables_map.count(option))
+      result = _variables_map[option].as<T>();
+    return result;
+  }
+
+private:
+  OptionsParser();
+  static boost::program_options::variables_map _variables_map;
+  static bool _parsed;
+  static std::vector<std::string> _unrecognized;
+  static boost::program_options::options_description* _all_options;
+}
+{% endhighlight %}
 
 The real meat of this class are the two methods registerOptions and parseOptions.
 
@@ -47,7 +88,7 @@ I could probably just have an overload of parseOptions with no parameter and hav
 Then in my classes I can do stuff like this to get option values:
 
 {% highlight cpp %}
-_testid = OptionsParser::getValue&lt;int&gt;("test-id");
+_testid = OptionsParser::getValue<int>("test-id");
 {% endhighlight %}
 
 to retrieve the value. If I used DECLARE\_DEFAULT\_OPTION, it automatically sets up the default value since the boost library sets that up. If I don&#8217;t, then I&#8217;d probably call the getValue overload that takes a default value.
