@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I write software for a living. I write embedded C and assembly for ARM based
+processors. I also develop desktop applications for Windows in C#.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself. 
+I love to participate in open source software projects, including IronPython and Jenkins.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[slide.o.mix@gmail.com](mailto:slide.o.mix@gmail.com)
