@@ -14,12 +14,11 @@ tweet_this_url:
 categories:
   - Uncategorized
 ---
-If you aren&#8217;t familiar with who Senor Cardgage is, please see the following [Homestarrunner Wiki entry][1]
+If you aren't familiar with who Senor Cardgage is, please see the following [Homestarrunner Wiki entry][1]
 
 The voice of Mark (you can count on that being his name) reminds me so much of Senor Cardgage.
 
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/j2z1YroJTRE&amp;hl=en&amp;fs=1" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><embed src="http://www.youtube.com/v/j2z1YroJTRE&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="allowfullscreen" width="425" height="344" /></object>
 
-
-<span class='st\_facebook\_vcount' st\_title='Senor Cardgage owns Norton Furniture' st\_url='http://earl-of-code.com/2008/12/senor-cardgage-owns-norton-furniture/' displayText='facebook'></span><span class='st\_twitter\_vcount' st\_title='Senor Cardgage owns Norton Furniture' st\_url='http://earl-of-code.com/2008/12/senor-cardgage-owns-norton-furniture/' displayText='twitter'></span><span class='st\_linkedin\_vcount' st\_title='Senor Cardgage owns Norton Furniture' st\_url='http://earl-of-code.com/2008/12/senor-cardgage-owns-norton-furniture/' displayText='linkedin'></span><span class='st\_email\_vcount' st\_title='Senor Cardgage owns Norton Furniture' st\_url='http://earl-of-code.com/2008/12/senor-cardgage-owns-norton-furniture/' displayText='email'></span><span class='st\_sharethis\_vcount' st\_title='Senor Cardgage owns Norton Furniture' st\_url='http://earl-of-code.com/2008/12/senor-cardgage-owns-norton-furniture/' displayText='sharethis'></span><span class='st\_fblike\_vcount' st\_title='Senor Cardgage owns Norton Furniture' st\_url='http://earl-of-code.com/2008/12/senor-cardgage-owns-norton-furniture/' displayText='fblike'></span><span class='st\_plusone\_vcount' st\_title='Senor Cardgage owns Norton Furniture' st\_url='http://earl-of-code.com/2008/12/senor-cardgage-owns-norton-furniture/' displayText='plusone'></span><span class='st\_pinterest\_vcount' st\_title='Senor Cardgage owns Norton Furniture' st\_url='http://earl-of-code.com/2008/12/senor-cardgage-owns-norton-furniture/' displayText='pinterest'></span>
 
  [1]: http://www.hrwiki.org/index.php/Senor_Cardgage
