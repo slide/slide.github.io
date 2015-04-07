@@ -22,7 +22,7 @@ I'm going to talk about the way I've setup my command line options parsing, to g
 
 First off, I have a static class called OptionsParser which looks like this:
 
-{% highlight cpp %}
+{% highlight cpp linenos=table %}
 class OptionsParser 
 {
 public:
@@ -71,7 +71,7 @@ registerOptions is used from the constructor of some static class instances I ha
 
 The OptionsProvider class is what I use for this, along with some macros:
 
-{% highlight cpp %}
+{% highlight cpp linenos=table %}
 class OptionDefinition
 {
 public:
@@ -119,7 +119,7 @@ private:
 
 Now, here is an example usage of these macros:
 
-{% highlight cpp %}
+{% highlight cpp linenos=table %}
 BEGIN_OPTIONS_ARRAY(TestManager)
   DECLARE_DEFAULT_OPTION("testid", unsigned long, 0L, "Step ID from automation")
   DECLARE_DEFAULT_OPTION("timeout", int, -1, "Number of seconds before stopping a\ntest with a timeout result")
@@ -136,7 +136,7 @@ This sets up the array and then creates a static OptionsProvider instance which 
 
 If I have a plug-in class that is loaded later, I just do something like this after it&#8217;s options have been registered:
 
-{% highlight cpp %}
+{% highlight cpp linenos=table %}
 OptionsParser::parseOptions(OptionsParser::getUnrecognizedOptions())
 {% endhighlight %}
 
@@ -144,7 +144,7 @@ I could probably just have an overload of parseOptions with no parameter and hav
 
 Then in my classes I can do stuff like this to get option values:
 
-{% highlight cpp %}
+{% highlight cpp linenos=table %}
 _testid = OptionsParser::getValue<int>("test-id");
 {% endhighlight %}
 
@@ -155,4 +155,4 @@ to retrieve the value. If I used DECLARE\_DEFAULT\_OPTION, it automatically sets
  [3]: http://www.boost.org/doc/libs/1_36_0/libs/filesystem/doc/index.htm
  [4]: http://www.boost.org/doc/libs/1_36_0/doc/html/program_options.html
  [5]: http://www.boost.org/doc/libs/1_36_0/libs/python/doc/index.html
- [6]: http://www.boost.org/doc/libs/1_36_0/libs/smart_ptr/smart_ptr.htm
+ [6]: http://www.boost.org/doc`/libs/1_36_0/libs/smart_ptr/smart_ptr.htm
