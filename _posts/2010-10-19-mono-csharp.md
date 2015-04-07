@@ -20,7 +20,7 @@ Back in April, I read&nbsp;[this][1]&nbsp;post by Miguel de Icaza about the C# R
 </div>
 
 <div>
-  I hadn&#8217;t had an opportunity to play with it as I had been pretty busy doing other stuff at work and really didn&#8217;t want to touch the application that I wanted to add it to because it&#8217;s pretty touchy for some reason. It&#8217;s a very multithreaded application with networking, database and a bunch of other stuff, so trying to touch it can cause rippling effects. It&#8217;s something I&#8217;ve really wanted to rewrite for a while anyway. I finally decided to implement a couple new features in the application and brave the problems that would come.
+  I hadn't had an opportunity to play with it as I had been pretty busy doing other stuff at work and really didn't want to touch the application that I wanted to add it to because it's pretty touchy for some reason. It's a very multithreaded application with networking, database and a bunch of other stuff, so trying to touch it can cause rippling effects. It's something I've really wanted to rewrite for a while anyway. I finally decided to implement a couple new features in the application and brave the problems that would come.
 </div>
 
 <div>
@@ -34,7 +34,7 @@ Back in April, I read&nbsp;[this][1]&nbsp;post by Miguel de Icaza about the C# R
 </div>
 
 <div>
-  Once I got back from my vacation I set about to correct the application correctly. You know, actually implement mutual exclusion and so forth so that it wouldn&#8217;t die a horrible death every couple days. I switched some of the threadpool stuff over to the new TPL (Task Parallel) that was released in .NET 4.0 and that has had a great improvement in speed, but I still wanted a way to break in and debug stuff at runtime. Enter the Mono.CSharp library.
+  Once I got back from my vacation I set about to correct the application correctly. You know, actually implement mutual exclusion and so forth so that it wouldn't die a horrible death every couple days. I switched some of the threadpool stuff over to the new TPL (Task Parallel) that was released in .NET 4.0 and that has had a great improvement in speed, but I still wanted a way to break in and debug stuff at runtime. Enter the Mono.CSharp library.
 </div>
 
 <div>
@@ -48,16 +48,16 @@ Back in April, I read&nbsp;[this][1]&nbsp;post by Miguel de Icaza about the C# R
 </div>
 
 <div>
-  If you haven&#8217;t checked out the Mono.Csharp library, I highly recommend you do. It has some potential to be very powerful. MS has promised a similar feature for the next revision of C#, but you can have it now, and very easily by just using the Mono.CSharp library.
+  If you haven't checked out the Mono.Csharp library, I highly recommend you do. It has some potential to be very powerful. MS has promised a similar feature for the next revision of C#, but you can have it now, and very easily by just using the Mono.CSharp library.
 </div>
 
 <div>
 </div>
 
 <div>
-  If you&#8217;d like more information about Mono, check out http://go-mono.com.
+  If you'd like more information about Mono, check out http://go-mono.com.
 </div>
 
-<span class='st\_facebook\_vcount' st\_title='Mono.CSharp' st\_url='http://earl-of-code.com/2010/10/mono-csharp/' displayText='facebook'></span><span class='st\_twitter\_vcount' st\_title='Mono.CSharp' st\_url='http://earl-of-code.com/2010/10/mono-csharp/' displayText='twitter'></span><span class='st\_linkedin\_vcount' st\_title='Mono.CSharp' st\_url='http://earl-of-code.com/2010/10/mono-csharp/' displayText='linkedin'></span><span class='st\_email\_vcount' st\_title='Mono.CSharp' st\_url='http://earl-of-code.com/2010/10/mono-csharp/' displayText='email'></span><span class='st\_sharethis\_vcount' st\_title='Mono.CSharp' st\_url='http://earl-of-code.com/2010/10/mono-csharp/' displayText='sharethis'></span><span class='st\_fblike\_vcount' st\_title='Mono.CSharp' st\_url='http://earl-of-code.com/2010/10/mono-csharp/' displayText='fblike'></span><span class='st\_plusone\_vcount' st\_title='Mono.CSharp' st\_url='http://earl-of-code.com/2010/10/mono-csharp/' displayText='plusone'></span><span class='st\_pinterest\_vcount' st\_title='Mono.CSharp' st\_url='http://earl-of-code.com/2010/10/mono-csharp/' displayText='pinterest'></span>
+
 
  [1]: http://tirania.org/blog/archive/2010/Apr-27.html

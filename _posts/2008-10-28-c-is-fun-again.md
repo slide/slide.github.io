@@ -134,13 +134,13 @@ DECLARE_OPTIONS_PROVIDER(TestManager, "TestManager options")
 
 This sets up the array and then creates a static OptionsProvider instance which will register the options with the OptionParser static class. Then I can just call OptionsParser::parseOptions(vector\_created\_from\_argv) and it will parse all the options into the boost::program\_options::variables_map.
 
-If I have a plug-in class that is loaded later, I just do something like this after it&#8217;s options have been registered:
+If I have a plug-in class that is loaded later, I just do something like this after it's options have been registered:
 
 {% highlight cpp %}
 OptionsParser::parseOptions(OptionsParser::getUnrecognizedOptions())
 {% endhighlight %}
 
-I could probably just have an overload of parseOptions with no parameter and have it automatically use the unrecognized options, but I haven&#8217;t decided on that yet. 
+I could probably just have an overload of parseOptions with no parameter and have it automatically use the unrecognized options, but I haven't decided on that yet. 
 
 Then in my classes I can do stuff like this to get option values:
 
@@ -148,7 +148,7 @@ Then in my classes I can do stuff like this to get option values:
 _testid = OptionsParser::getValue<int>("test-id");
 {% endhighlight %}
 
-to retrieve the value. If I used DECLARE\_DEFAULT\_OPTION, it automatically sets up the default value since the boost library sets that up. If I don&#8217;t, then I&#8217;d probably call the getValue overload that takes a default value.
+to retrieve the value. If I used DECLARE\_DEFAULT\_OPTION, it automatically sets up the default value since the boost library sets that up. If I don't, then I'd probably call the getValue overload that takes a default value.
 
  [1]: http://www.boost.org/
  [2]: http://www.boost.org/doc/libs/1_36_0/doc/html/any.html

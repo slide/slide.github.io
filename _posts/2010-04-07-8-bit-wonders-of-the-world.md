@@ -72,7 +72,7 @@ Some of these remind me a lot of playing games like Tetris and Metroid. I could 
 
 P.S. If you find a version of “Lass mich nie mehr los” in 8-bit, let me know.
 
-<span class='st\_facebook\_vcount' st\_title='8-bit Wonders of the World' st\_url='http://earl-of-code.com/2010/04/8-bit-wonders-of-the-world/' displayText='facebook'></span><span class='st\_twitter\_vcount' st\_title='8-bit Wonders of the World' st\_url='http://earl-of-code.com/2010/04/8-bit-wonders-of-the-world/' displayText='twitter'></span><span class='st\_linkedin\_vcount' st\_title='8-bit Wonders of the World' st\_url='http://earl-of-code.com/2010/04/8-bit-wonders-of-the-world/' displayText='linkedin'></span><span class='st\_email\_vcount' st\_title='8-bit Wonders of the World' st\_url='http://earl-of-code.com/2010/04/8-bit-wonders-of-the-world/' displayText='email'></span><span class='st\_sharethis\_vcount' st\_title='8-bit Wonders of the World' st\_url='http://earl-of-code.com/2010/04/8-bit-wonders-of-the-world/' displayText='sharethis'></span><span class='st\_fblike\_vcount' st\_title='8-bit Wonders of the World' st\_url='http://earl-of-code.com/2010/04/8-bit-wonders-of-the-world/' displayText='fblike'></span><span class='st\_plusone\_vcount' st\_title='8-bit Wonders of the World' st\_url='http://earl-of-code.com/2010/04/8-bit-wonders-of-the-world/' displayText='plusone'></span><span class='st\_pinterest\_vcount' st\_title='8-bit Wonders of the World' st\_url='http://earl-of-code.com/2010/04/8-bit-wonders-of-the-world/' displayText='pinterest'></span>
+
 
  [1]: http://digg.com
  [2]: http://reddit.com

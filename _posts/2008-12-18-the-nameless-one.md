@@ -34,7 +34,7 @@ My wife is into naming cars. Her first car was named **Meridith**; this is what 
 </div>
 
 <div style="text-align: left;">
-  That&#8217;s a 1993 Ford Escort. The color was black. Stick shift. Nice little car. I taught her how to drive it (she hadn&#8217;t driven stick before) and she was great.</p>
+  That's a 1993 Ford Escort. The color was black. Stick shift. Nice little car. I taught her how to drive it (she hadn't driven stick before) and she was great.</p>
 </div>
 
 <div style="text-align: left;">
@@ -55,7 +55,7 @@ My wife is into naming cars. Her first car was named **Meridith**; this is what 
 </div>
 
 <div style="text-align: left;">
-  Apparently she didn&#8217;t like this car very much because she named it <b>Donkey Ass</b>. I assume she was just using two synonymns for the beast of burden. She couldn&#8217;t possibly mean anything else.
+  Apparently she didn't like this car very much because she named it <b>Donkey Ass</b>. I assume she was just using two synonymns for the beast of burden. She couldn't possibly mean anything else.
 </div>
 
 <div style="text-align: left;">
@@ -107,7 +107,7 @@ My wife is into naming cars. Her first car was named **Meridith**; this is what 
 </div>
 
 <div style="text-align: left;">
-  I don&#8217;t think we ever took ours anywhere quite this nice looking. Ours didn&#8217;t have a sun/moon roof either. I liked the Mazda. It had some pep to it, nice engine for a smallish SUV and it fit our needs for car seats at the time. We drove it until the air conditioning started going out (a sure sign of death in Arizona!). We traded it in for our current vehicle, which I will get to in a minute. She named it <b>The Lasso</b> after her brother sent her a picture of his facial hair, which was side burns that wrapped into a lasso on his cheek. As a fan of facial hair, I was intrigued and liked it. I&#8217;ll try and find the picture to post here.
+  I don't think we ever took ours anywhere quite this nice looking. Ours didn't have a sun/moon roof either. I liked the Mazda. It had some pep to it, nice engine for a smallish SUV and it fit our needs for car seats at the time. We drove it until the air conditioning started going out (a sure sign of death in Arizona!). We traded it in for our current vehicle, which I will get to in a minute. She named it <b>The Lasso</b> after her brother sent her a picture of his facial hair, which was side burns that wrapped into a lasso on his cheek. As a fan of facial hair, I was intrigued and liked it. I'll try and find the picture to post here.
 </div>
 
 <div style="text-align: left;">
@@ -128,21 +128,21 @@ My wife is into naming cars. Her first car was named **Meridith**; this is what 
 </div>
 
 <div class="separator" style="clear: both; text-align: left;">
-  It&#8217;s a stick (and definitely not as shiny as the one in the photo). I&#8217;m using it as a commuter car (~40 miles round trip per day, to and from work). One of the hubcaps is missing and the front left tire has some issue that I need to get looked at again (yes, I had it looked at a month or so ago).
+  It's a stick (and definitely not as shiny as the one in the photo). I'm using it as a commuter car (~40 miles round trip per day, to and from work). One of the hubcaps is missing and the front left tire has some issue that I need to get looked at again (yes, I had it looked at a month or so ago).
 </div>
 
 <div class="separator" style="clear: both; text-align: left;">
 </div>
 
 <div class="separator" style="clear: both; text-align: left;">
-  I refuse to name this car. My wife may very well replace &#8220;Lancer&#8221; with &#8220;Judge Reinhold&#8221; or &#8220;Fritz McGovern&#8221; in her mind when we talk about the car. I just don&#8217;t know. I don&#8217;t know why I refuse to name my car, perhaps I just don&#8217;t get attached to vehicles the way she does. I see a car as something to get me from point A to point B. As long as it has A/C (we do live in Arizona after all) I am ok with just about anything (except a New Beetle&#8230;don&#8217;t like those).
+  I refuse to name this car. My wife may very well replace "Lancer" with "Judge Reinhold" or "Fritz McGovern" in her mind when we talk about the car. I just don't know. I don't know why I refuse to name my car, perhaps I just don't get attached to vehicles the way she does. I see a car as something to get me from point A to point B. As long as it has A/C (we do live in Arizona after all) I am ok with just about anything (except a New Beetle...don't like those).
 </div>
 
 <div class="separator" style="clear: both; text-align: left;">
 </div>
 
 <div class="separator" style="clear: both; text-align: left;">
-  Now, on to the car we got when the A/C started going out on <b>The Lasso</b>. It&#8217;s a 2008 Honda Odyssey.
+  Now, on to the car we got when the A/C started going out on <b>The Lasso</b>. It's a 2008 Honda Odyssey.
 </div>
 
 <div class="separator" style="clear: both; text-align: left;">
@@ -159,14 +159,14 @@ My wife is into naming cars. Her first car was named **Meridith**; this is what 
 </div>
 
 <div style="text-align: left;">
-  She named this one <b>Dusty Miller</b>; even my daughter calls it that. I really love this vehicle. It drives VERY well, the features are great (DVD, MP3, headphones for the screen, leather, back-up camera, etc). I even love the color of this car. It drives smooth&#8230;smoooooooth. It gets pretty good gas mileage, and fits our car seat space needs at this point. Lots more room for travel too.
+  She named this one <b>Dusty Miller</b>; even my daughter calls it that. I really love this vehicle. It drives VERY well, the features are great (DVD, MP3, headphones for the screen, leather, back-up camera, etc). I even love the color of this car. It drives smooth...smoooooooth. It gets pretty good gas mileage, and fits our car seat space needs at this point. Lots more room for travel too.
 </div>
 
 <div style="text-align: left;">
 </div>
 
 <div style="text-align: left;">
-  I NEVER refer to these vehicles by the name that my has given them. I say &#8220;the van,&#8221; &#8220;the Lancer,&#8221; &#8220;the Mazda,&#8221; &#8220;the Cavalier,&#8221; etc. Again, I don&#8217;t know what I have against it, perhaps if I were talking to a shrink they might suppose it&#8217;s because I don&#8217;t want to become too attached or something, but who knows. Maybe one day, I&#8217;ll give in and name the Lancer, but I don&#8217;t think so.
+  I NEVER refer to these vehicles by the name that my has given them. I say "the van," "the Lancer," "the Mazda," "the Cavalier," etc. Again, I don't know what I have against it, perhaps if I were talking to a shrink they might suppose it's because I don't want to become too attached or something, but who knows. Maybe one day, I'll give in and name the Lancer, but I don't think so.
 </div>
 
 <div style="text-align: left;">
@@ -175,4 +175,3 @@ My wife is into naming cars. Her first car was named **Meridith**; this is what 
 <div style="text-align: left;">
 </div>
 
-<span class='st\_facebook\_vcount' st\_title='The Nameless One' st\_url='http://earl-of-code.com/2008/12/the-nameless-one/' displayText='facebook'></span><span class='st\_twitter\_vcount' st\_title='The Nameless One' st\_url='http://earl-of-code.com/2008/12/the-nameless-one/' displayText='twitter'></span><span class='st\_linkedin\_vcount' st\_title='The Nameless One' st\_url='http://earl-of-code.com/2008/12/the-nameless-one/' displayText='linkedin'></span><span class='st\_email\_vcount' st\_title='The Nameless One' st\_url='http://earl-of-code.com/2008/12/the-nameless-one/' displayText='email'></span><span class='st\_sharethis\_vcount' st\_title='The Nameless One' st\_url='http://earl-of-code.com/2008/12/the-nameless-one/' displayText='sharethis'></span><span class='st\_fblike\_vcount' st\_title='The Nameless One' st\_url='http://earl-of-code.com/2008/12/the-nameless-one/' displayText='fblike'></span><span class='st\_plusone\_vcount' st\_title='The Nameless One' st\_url='http://earl-of-code.com/2008/12/the-nameless-one/' displayText='plusone'></span><span class='st\_pinterest\_vcount' st\_title='The Nameless One' st\_url='http://earl-of-code.com/2008/12/the-nameless-one/' displayText='pinterest'></span>

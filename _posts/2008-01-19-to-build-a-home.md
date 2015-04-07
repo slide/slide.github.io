@@ -23,7 +23,7 @@ Why I like it:
   * Starts out **very** simple, and builds to an awesome climax. The simplicity of the piano at the beginning, and then the addition of the strings as it goes along is awesome.
   * I am a sucker for piano and strings in rock/pop music.
   * The lyrics are not overdone. They are simple, to the point, yet deep. There are some good metaphors for life and stuff.
-  * My favorite line in the whole song is &#8220;I climbed a tree to see the world.&#8221; I don't know why it is my favorite, but it is.
+  * My favorite line in the whole song is "I climbed a tree to see the world." I don't know why it is my favorite, but it is.
 
 This is not an official video from the song, but I thought it was pretty good. 
 

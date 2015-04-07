@@ -177,7 +177,7 @@ categories:
                       
                       <ol>
                         <li>
-                          Solutions directory &#8211; contains the Visual Studio solution files for the various projects that can be built (remember to use IronPython.Mono.sln if building on Linux). <li>
+                          Solutions directory - contains the Visual Studio solution files for the various projects that can be built (remember to use IronPython.Mono.sln if building on Linux). <li>
                             Languages\IronPython\IronPython.Modules – contains most of the “native” modules that are ports from C modules <li>
                               Languages\IronPython\IronPython – contains the actual implementation (parser, compiler, etc.) for IronPython
                             </li></ol> 
@@ -210,7 +210,7 @@ categories:
                                   <li>
                                     <a name="references1"></a>Github has a much better tutorial on forking a project available at <a href="http://help.github.com/fork-a-repo/">http://help.github.com/fork-a-repo/</a> <li>
                                       <a name="references2"></a>Github’s documentation <a href="http://help.github.com/">http://help.github.com/</a> is pretty good, I look through it all the time. <li>
-                                        <a name="references3"></a>Look at <a href="http://nathanj.github.com/gitguide/tour.html">http://nathanj.github.com/gitguide/tour.html</a> under &#8220;Pushing to a Remote Server&#8221; for information on generating your own SSH keys for use with Github.
+                                        <a name="references3"></a>Look at <a href="http://nathanj.github.com/gitguide/tour.html">http://nathanj.github.com/gitguide/tour.html</a> under "Pushing to a Remote Server" for information on generating your own SSH keys for use with Github.
                                       </li></ol> 
                                       <p>
                                         <span class='st_facebook_vcount' st_title='Setting up the environment &ndash; Part 2' st_url='http://earl-of-code.com/2012/01/setting-up-the-environment-part-2/' displayText='facebook'></span><span class='st_twitter_vcount' st_title='Setting up the environment &ndash; Part 2' st_url='http://earl-of-code.com/2012/01/setting-up-the-environment-part-2/' displayText='twitter'></span><span class='st_linkedin_vcount' st_title='Setting up the environment &ndash; Part 2' st_url='http://earl-of-code.com/2012/01/setting-up-the-environment-part-2/' displayText='linkedin'></span><span class='st_email_vcount' st_title='Setting up the environment &ndash; Part 2' st_url='http://earl-of-code.com/2012/01/setting-up-the-environment-part-2/' displayText='email'></span><span class='st_sharethis_vcount' st_title='Setting up the environment &ndash; Part 2' st_url='http://earl-of-code.com/2012/01/setting-up-the-environment-part-2/' displayText='sharethis'></span><span class='st_fblike_vcount' st_title='Setting up the environment &ndash; Part 2' st_url='http://earl-of-code.com/2012/01/setting-up-the-environment-part-2/' displayText='fblike'></span><span class='st_plusone_vcount' st_title='Setting up the environment &ndash; Part 2' st_url='http://earl-of-code.com/2012/01/setting-up-the-environment-part-2/' displayText='plusone'></span><span class='st_pinterest_vcount' st_title='Setting up the environment &ndash; Part 2' st_url='http://earl-of-code.com/2012/01/setting-up-the-environment-part-2/' displayText='pinterest'></span>

@@ -1,5 +1,5 @@
 ---
-title: 'The Widow&#8217;s Mite'
+title: 'The Widow's Mite'
 author: alex
 layout: post
 permalink: /2010/10/the-widows-mite/
@@ -28,4 +28,3 @@ This is a booklet that my sister wrote. She is an extremely talented woman and I
 
 This is her blog.&nbsp;<http://myamateuradventures.blogspot.com/>
 
-<span class='st\_facebook\_vcount' st\_title='The Widow&#8217;s Mite' st\_url='http://earl-of-code.com/2010/10/the-widows-mite/' displayText='facebook'></span><span class='st\_twitter\_vcount' st\_title='The Widow&#8217;s Mite' st\_url='http://earl-of-code.com/2010/10/the-widows-mite/' displayText='twitter'></span><span class='st\_linkedin\_vcount' st\_title='The Widow&#8217;s Mite' st\_url='http://earl-of-code.com/2010/10/the-widows-mite/' displayText='linkedin'></span><span class='st\_email\_vcount' st\_title='The Widow&#8217;s Mite' st\_url='http://earl-of-code.com/2010/10/the-widows-mite/' displayText='email'></span><span class='st\_sharethis\_vcount' st\_title='The Widow&#8217;s Mite' st\_url='http://earl-of-code.com/2010/10/the-widows-mite/' displayText='sharethis'></span><span class='st\_fblike\_vcount' st\_title='The Widow&#8217;s Mite' st\_url='http://earl-of-code.com/2010/10/the-widows-mite/' displayText='fblike'></span><span class='st\_plusone\_vcount' st\_title='The Widow&#8217;s Mite' st\_url='http://earl-of-code.com/2010/10/the-widows-mite/' displayText='plusone'></span><span class='st\_pinterest\_vcount' st\_title='The Widow&#8217;s Mite' st\_url='http://earl-of-code.com/2010/10/the-widows-mite/' displayText='pinterest'></span>

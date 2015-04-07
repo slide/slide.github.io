@@ -315,7 +315,7 @@ I hope this simple little application has shown you how easy it is to incorporat
 
 [Testermatic Project][4]
 
-<span class='st\_facebook\_vcount' st\_title='Testing With IronPython' st\_url='http://earl-of-code.com/2012/02/testing-with-ironpython/' displayText='facebook'></span><span class='st\_twitter\_vcount' st\_title='Testing With IronPython' st\_url='http://earl-of-code.com/2012/02/testing-with-ironpython/' displayText='twitter'></span><span class='st\_linkedin\_vcount' st\_title='Testing With IronPython' st\_url='http://earl-of-code.com/2012/02/testing-with-ironpython/' displayText='linkedin'></span><span class='st\_email\_vcount' st\_title='Testing With IronPython' st\_url='http://earl-of-code.com/2012/02/testing-with-ironpython/' displayText='email'></span><span class='st\_sharethis\_vcount' st\_title='Testing With IronPython' st\_url='http://earl-of-code.com/2012/02/testing-with-ironpython/' displayText='sharethis'></span><span class='st\_fblike\_vcount' st\_title='Testing With IronPython' st\_url='http://earl-of-code.com/2012/02/testing-with-ironpython/' displayText='fblike'></span><span class='st\_plusone\_vcount' st\_title='Testing With IronPython' st\_url='http://earl-of-code.com/2012/02/testing-with-ironpython/' displayText='plusone'></span><span class='st\_pinterest\_vcount' st\_title='Testing With IronPython' st\_url='http://earl-of-code.com/2012/02/testing-with-ironpython/' displayText='pinterest'></span>
+
 
  [1]: http://earl-of-code.com/wp-content/uploads/2012/02/image.png
  [2]: http://earl-of-code.com/wp-content/uploads/2012/02/testermatic_toolbar.png

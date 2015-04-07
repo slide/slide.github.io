@@ -1,12 +1,12 @@
 ---
-title: 'Jenkins &#8211; Standalone Build Generator'
+title: 'Jenkins - Standalone Build Generator'
 author: alex
 layout: post
 permalink: /2013/01/jenkins-standalone-build-generator/
 categories:
   - Uncategorized
 ---
-I&#8217;ve blogged before about how we use Jenkins at work for our continuous integration solution. One thing that our previous CI solution had was the ability for developers to run a standalone version of the tool on their development PC&#8217;s to check out large scale changes that might break several applications. Jenkins is much more difficult to do this with, mainly because we are using Rational Clearcase for SCM. We could use the Jenkins server to build from individual development streams if we wanted to, but it would require that all the files be checked in before being able to build locally.
+I've blogged before about how we use Jenkins at work for our continuous integration solution. One thing that our previous CI solution had was the ability for developers to run a standalone version of the tool on their development PC's to check out large scale changes that might break several applications. Jenkins is much more difficult to do this with, mainly because we are using Rational Clearcase for SCM. We could use the Jenkins server to build from individual development streams if we wanted to, but it would require that all the files be checked in before being able to build locally.
 
 I came up with a Groovy script that runs after each Nightly Build that collects the jobs that are currently in Jenkins and generates a standalone zip file that developers can download and launch a local instance of Jenkins to do a build from their view. The script is used as a  Groovy build step.
 
@@ -256,4 +256,3 @@ root_dir.eachFileRecurse { file -&gt;
 zipFile.close() </code></pre>
 </noscript>
 
-<span class='st\_facebook\_vcount' st\_title='Jenkins &#8211; Standalone Build Generator' st\_url='http://earl-of-code.com/2013/01/jenkins-standalone-build-generator/' displayText='facebook'></span><span class='st\_twitter\_vcount' st\_title='Jenkins &#8211; Standalone Build Generator' st\_url='http://earl-of-code.com/2013/01/jenkins-standalone-build-generator/' displayText='twitter'></span><span class='st\_linkedin\_vcount' st\_title='Jenkins &#8211; Standalone Build Generator' st\_url='http://earl-of-code.com/2013/01/jenkins-standalone-build-generator/' displayText='linkedin'></span><span class='st\_email\_vcount' st\_title='Jenkins &#8211; Standalone Build Generator' st\_url='http://earl-of-code.com/2013/01/jenkins-standalone-build-generator/' displayText='email'></span><span class='st\_sharethis\_vcount' st\_title='Jenkins &#8211; Standalone Build Generator' st\_url='http://earl-of-code.com/2013/01/jenkins-standalone-build-generator/' displayText='sharethis'></span><span class='st\_fblike\_vcount' st\_title='Jenkins &#8211; Standalone Build Generator' st\_url='http://earl-of-code.com/2013/01/jenkins-standalone-build-generator/' displayText='fblike'></span><span class='st\_plusone\_vcount' st\_title='Jenkins &#8211; Standalone Build Generator' st\_url='http://earl-of-code.com/2013/01/jenkins-standalone-build-generator/' displayText='plusone'></span><span class='st\_pinterest\_vcount' st\_title='Jenkins &#8211; Standalone Build Generator' st\_url='http://earl-of-code.com/2013/01/jenkins-standalone-build-generator/' displayText='pinterest'></span>
