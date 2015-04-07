@@ -22,7 +22,7 @@ In the coming weeks I will be highlighting some of the songs that I think are re
 
 Take a listen (and watch it too, for pure entertainment value) and let me know what you think with a comment.
 
-<object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/bpV5InLw52U&rel=0&color1=0x3a3a3a&color2=0x999999&border=0"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/bpV5InLw52U&rel=0&color1=0x3a3a3a&color2=0x999999&border=0" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></embed></object>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/RFDW9b_ejfI" frameborder="0" allowfullscreen></iframe>
 
 
  [1]: http://en.wikipedia.org/wiki/Focus_%28band%29
