@@ -71,17 +71,74 @@ registerOptions is used from the constructor of some static class instances I ha
 
 The OptionsProvider class is what I use for this, along with some macros:
 
-<pre class="c++" name="code">class OptionDefinition<br />{<br />public:<br />  OptionDefinition(const std::string& option_string, boost::program_options::value_semantic* value, const std::string& description);<br /><br />  const std::string& getOptionString(void) const;<br />  const boost::program_options::value_semantic* getValueSemantic(void) const;<br />  const std::string& getDescription(void) const;<br />private:<br />  std::string _option_string;<br />  boost::program_options::value_semantic* _value_semantic;<br />  std::string _description;<br />};<br /><br />class OptionsProvider<br />{<br />public:<br />  OptionsProvider(const std::string& owner, const std::string& description, OptionDefinition* options[]);<br />  virtual ~OptionsProvider(void);<br /><br />  const std::string& getOwner(void) const;<br />  const std::string& getDescription(void) const;<br />  const boost::program_options::options_description& getOptions(void) const;<br /><br />private:<br />  std::string _owner;<br />  std::string _description;<br />  boost::program_options::options_description _options;<br />};<br /><br />#define BEGIN_OPTIONS_ARRAY(owner) static OptionDefinition* Options##owner[] = { <br />#define DECLARE_OPTION(option_string, value_type, description) new OptionDefinition((option_string), \<br />new boost::program_options::typed_value&lt;value_type&gt;(NULL), \<br />(description)),<br />#define DECLARE_BOOL_OPTION(option_string, description)   new OptionDefinition((option_string), \<br />(new boost::program_options::typed_value&lt;bool&gt;(NULL))-&gt;default_value(0)-&gt;zero_tokens(), \<br />(description)),      <br /><br />#define DECLARE_DEFAULT_OPTION(option_string, value_type, def_value, description) new OptionDefinition((option_string), \<br />(new boost::program_options::typed_value&lt;value_type&gt;(NULL))-&gt;default_value(def_value), \<br />(description)),<br />#define END_OPTIONS_ARRAY()  NULL };   // add terminator to the end of the list<br /><br />#define DECLARE_OPTIONS_PROVIDER(owner, description) static OptionsProvider OptionsProvider##owner(#owner, description, Options##owner);<br /><br />#define OPTIONS_PROVIDER(owner) OptionsProvider##owner<br /></pre>
+{% highlight cpp %}
+class OptionDefinition
+{
+public:
+  OptionDefinition(const std::string& option_string, boost::program_options::value_semantic* value, const std::string& description);
+  const std::string& getOptionString(void) const;
+  const boost::program_options::value_semantic* getValueSemantic(void) const;
+  const std::string& getDescription(void) const;
+private:
+  std::string _option_string;
+  boost::program_options::value_semantic* _value_semantic;
+  std::string _description;
+};
+
+class OptionsProvider
+{
+public:
+  OptionsProvider(const std::string& owner, const std::string& description, OptionDefinition* options[]);
+  virtual ~OptionsProvider(void);
+
+  const std::string& getOwner(void) const;
+  const std::string& getDescription(void) const;
+  const boost::program_options::options_description& getOptions(void) const;
+
+private:
+  std::string _owner;
+  std::string _description;
+  boost::program_options::options_description _options;
+};
+
+#define BEGIN_OPTIONS_ARRAY(owner) static OptionDefinition* Options##owner[] = {
+#define DECLARE_OPTION(option_string, value_type, description) new OptionDefinition((option_string), \
+  new boost::program_options::typed_value<value_type>(NULL), \
+  (description)),
+#define DECLARE_BOOL_OPTION(option_string, description)   new OptionDefinition((option_string), \
+  (new boost::program_options::typed_value<bool>(NULL))->default_value(0)->zero_tokens(), \
+  (description)),
+#define DECLARE_DEFAULT_OPTION(option_string, value_type, def_value, description) new OptionDefinition((option_string), \
+  (new boost::program_options::typed_value<value_type>(NULL))->default_value(def_value), \
+  (description)),
+#define END_OPTIONS_ARRAY()  NULL };   // add terminator to the end of the list
+
+#define DECLARE_OPTIONS_PROVIDER(owner, description) static OptionsProvider OptionsProvider##owner(#owner, description, Options##owner);
+#define OPTIONS_PROVIDER(owner) OptionsProvider##owner
+{% endhighlight %}
 
 Now, here is an example usage of these macros:
 
-<pre class="c++" name="code">BEGIN_OPTIONS_ARRAY(TestManager)<br />DECLARE_DEFAULT_OPTION("testid", unsigned long, 0L, "Step ID from automation")<br />DECLARE_DEFAULT_OPTION("timeout", int, -1, "Number of seconds before stopping a\ntest with a timeout result")<br />DECLARE_DEFAULT_OPTION("board-path", fs::path, fs::path("boards"), "Path to directory containing board libraries")<br />DECLARE_DEFAULT_OPTION("test-config", fs::path, fs::path(""), "Path to file containing the test configuration")<br />DECLARE_DEFAULT_OPTION("manager-path", fs::path, fs::path("managers"), "Path to directory container manager libraries")<br />DECLARE_DEFAULT_OPTION("output-dir", fs::path, fs::path("output"), "Path to output directory")<br />END_OPTIONS_ARRAY()<br /><br />DECLARE_OPTIONS_PROVIDER(TestManager, "TestManager options")<br /></pre>
+{% highlight cpp %}
+BEGIN_OPTIONS_ARRAY(TestManager)
+  DECLARE_DEFAULT_OPTION("testid", unsigned long, 0L, "Step ID from automation")
+  DECLARE_DEFAULT_OPTION("timeout", int, -1, "Number of seconds before stopping a\ntest with a timeout result")
+  DECLARE_DEFAULT_OPTION("board-path", fs::path, fs::path("boards"), "Path to directory containing board libraries")
+  DECLARE_DEFAULT_OPTION("test-config", fs::path, fs::path(""), "Path to file containing the test configuration")
+  DECLARE_DEFAULT_OPTION("manager-path", fs::path, fs::path("managers"), "Path to directory container manager libraries")
+  DECLARE_DEFAULT_OPTION("output-dir", fs::path, fs::path("output"), "Path to output directory")
+END_OPTIONS_ARRAY()
+
+DECLARE_OPTIONS_PROVIDER(TestManager, "TestManager options")
+{% endhighlight %}
 
 This sets up the array and then creates a static OptionsProvider instance which will register the options with the OptionParser static class. Then I can just call OptionsParser::parseOptions(vector\_created\_from\_argv) and it will parse all the options into the boost::program\_options::variables_map.
 
 If I have a plug-in class that is loaded later, I just do something like this after it&#8217;s options have been registered:
 
-<pre class="c++" name="code">OptionsParser::parseOptions(OptionsParser::getUnrecognizedOptions())<br /></pre>
+{% highlight cpp %}
+OptionsParser::parseOptions(OptionsParser::getUnrecognizedOptions())
+{% endhighlight %}
 
 I could probably just have an overload of parseOptions with no parameter and have it automatically use the unrecognized options, but I haven&#8217;t decided on that yet. 
 
