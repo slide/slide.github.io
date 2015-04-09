@@ -3,16 +3,10 @@ title: Lonely Day
 author: alex
 layout: post
 permalink: /2008/01/lonely-day/
-blogger_blog:
-  - slide-o-blog.blogspot.com
-blogger_author:
-  - Alex Earlhttp://www.blogger.com/profile/09111492254896423873noreply@blogger.com
-blogger_permalink:
-  - /2008/01/lonely-day.html
 tweet_this_url:
   - http://is.gd/eq34iN
 categories:
-  - Uncategorized
+  - music
 ---
 System of a Down - Lonely Day
 
