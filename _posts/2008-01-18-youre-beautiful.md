@@ -1,18 +1,12 @@
 ---
-title: 'You\'re Beautiful'
+title: You're Beautiful
 author: alex
 layout: post
 permalink: /2008/01/youre-beautiful/
-blogger_blog:
-  - slide-o-blog.blogspot.com
-blogger_author:
-  - Alex Earlhttp://www.blogger.com/profile/09111492254896423873noreply@blogger.com
-blogger_permalink:
-  - /2008/01/youre-beautiful.html
 tweet_this_url:
   - http://is.gd/5Wcd1d
 categories:
-  - Uncategorized
+  - music
 ---
 This post is about James Blunt's "You're Beautiful"
 
