@@ -20,9 +20,9 @@ Kelly Clarkson - Since U Been Gone
 
 Oh, why, oh why do I like this song?! Many times my dirty little secret songs are not clear to me why I like them. This song is no different. It combines several things that I normally do not like. 
 
-# Kelly Clarkson
-# Kelly Clarkson
-# ~~Teeny Bop Music~~ Kelly Clarkson
+ 1. Kelly Clarkson
+ 2. Kelly Clarkson
+ 3. ~~Teeny Bop Music~~ Kelly Clarkson
 
 As you can tell, I am not a fan of Kelly Clarkson at all. I don't like American Idol (shock!) and anyone to come from American Idol is a marketing ploy at best. Which is why it shames me to say that I love this song. One redeeming quality of this song is that it was written by Avril Lavigne who is a somewhat better musician than Kelly Clarkson.
 
