@@ -3,16 +3,10 @@ title: Dirty Little Secret 4
 author: alex
 layout: post
 permalink: /2008/06/dirty-little-secret-4/
-blogger_blog:
-  - slide-o-blog.blogspot.com
-blogger_author:
-  - Alex Earlhttp://www.blogger.com/profile/09111492254896423873noreply@blogger.com
-blogger_permalink:
-  - /2008/06/dirty-little-secret-4.html
 tweet_this_url:
   - http://is.gd/JiokSN
 categories:
-  - Uncategorized
+  - music
 ---
 This one is a whopper. I should prepare you for this one. This is probably the one I am most ashamed of liking. The sheer crap factor that this band has is roughly a 10 on a scale of 1 to 5. They are horrible, and yet I love this song. 
 
@@ -30,4 +24,4 @@ This one is not embedded because the people over at Universal wanted to keep thi
 
 
 
- [1]: http://www.youtube.com/watch?v=5tfSqjc_WRY
+ [1]: https://www.youtube.com/watch?v=NHozn0YXAeE

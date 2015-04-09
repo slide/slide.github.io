@@ -30,17 +30,15 @@ The sales pitch by the inventor must have gone something like this...
 
 **Company:** \*blank stare\*
 
-**Inventor:** "The best part is the name I came up with, are you ready for this?! &#8216;Poop Freeze'!"
+**Inventor:** "The best part is the name I came up with, are you ready for this?! 'Poop Freeze'!"
 
 **Company:** \*blank stare\*
 
-If you, or anyone you know has ever used &#8216;Poop Freeze,' please leave a comment with your experience. 
+If you, or anyone you know has ever used 'Poop Freeze,' please leave a comment with your experience. 
 
 Also, here is the website and commercial.
 
 <http://www.poop-freeze.com/>
 
-<center>
-  <br />
-</center>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/73aL_4idVms" frameborder="0" allowfullscreen></iframe>
 
