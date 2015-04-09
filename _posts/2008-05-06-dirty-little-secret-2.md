@@ -3,16 +3,10 @@ title: Dirty Little Secret 2
 author: alex
 layout: post
 permalink: /2008/05/dirty-little-secret-2/
-blogger_blog:
-  - slide-o-blog.blogspot.com
-blogger_author:
-  - Alex Earlhttp://www.blogger.com/profile/09111492254896423873noreply@blogger.com
-blogger_permalink:
-  - /2008/05/dirty-little-secret-2.html
 tweet_this_url:
   - http://is.gd/g1wgJC
 categories:
-  - Uncategorized
+  - music
 ---
 Old Crow Medicine Show - Wagon Wheel
 
@@ -38,6 +32,6 @@ This part has good harmonies with the backup singers in a'capella.
 As much as I dislike country music, I can listen to this song over and over and over. Just ask slide-o-lovie.
 
 <center>
-  <br />
+  <iframe width="420" height="315" src="https://www.youtube.com/embed/1gX1EP6mG-E" frameborder="0" allowfullscreen></iframe>
 </center>
 
