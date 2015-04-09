@@ -5,14 +5,8 @@ layout: post
 permalink: /2008/01/empty-walls/
 tweet_this_url:
   - http://is.gd/WAeQiA
-blogger_blog:
-  - slide-o-blog.blogspot.com
-blogger_author:
-  - Alex Earlhttp://www.blogger.com/profile/09111492254896423873noreply@blogger.com
-blogger_permalink:
-  - /2008/01/empty-walls.html
 categories:
-  - Uncategorized
+  - music
 ---
 [Serj Tankian][1] - Empty Walls
 
@@ -26,9 +20,9 @@ Why I like this song:
   * Serj's voice is perfect for the type of music he sings. He has some hard edges, but underneath is a good set of pipes.
   * The harmonies in this song are great. The background singers seem to take the place of the second singer in SOAD pretty well, although nothing can really replace the harmonies he and Serj sing in [Lonely Day][3]
   * This song is great to code to, it doesn't take a lot of thought to listen to in enjoyment mode (deep thought mode works with this song too, the message from this song, and the video is quite clear, something SOAD has lacked a little in their most recent popular songs).
-</ul> 
 
 <center>
+  <iframe width="420" height="315" src="https://www.youtube.com/embed/-CxKA1uETxE" frameborder="0" allowfullscreen></iframe>
 </center>
 
 
