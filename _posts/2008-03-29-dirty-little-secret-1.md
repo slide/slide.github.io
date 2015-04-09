@@ -22,7 +22,7 @@ Oh, why, oh why do I like this song?! Many times my dirty little secret songs ar
 
  1. Kelly Clarkson
  2. Kelly Clarkson
- 3. ~~Teeny Bop Music~~ Kelly Clarkson
+ 3. <del>Teeny Bop Music</del> Kelly Clarkson
 
 As you can tell, I am not a fan of Kelly Clarkson at all. I don't like American Idol (shock!) and anyone to come from American Idol is a marketing ploy at best. Which is why it shames me to say that I love this song. One redeeming quality of this song is that it was written by Avril Lavigne who is a somewhat better musician than Kelly Clarkson.
 
