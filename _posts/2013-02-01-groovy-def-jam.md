@@ -1,5 +1,5 @@
 ---
-title: 'Groovy &#8216;def' Jam'
+title: 'Groovy 'def' Jam'
 author: alex
 layout: post
 permalink: /2013/02/groovy-def-jam/
@@ -38,7 +38,7 @@ The thing to notice in that code is the double curly brace at the end. I only ha
 
 I set doOutput to either true or false depending on if the tag I am rendering needs it or not (the Jelly choose tag doesn't need to be rendered, just the when/otherwise children).
 
-So, somehow, doOutput was getting set to true, even though I set it to false inside the check for the &#8216;choose' tag element. 
+So, somehow, doOutput was getting set to true, even though I set it to false inside the check for the 'choose' tag element. 
 
 Wha?!
 
@@ -56,11 +56,11 @@ if(doOutput...) {
 }
 </pre>
 
-Not very complex. It turns out though that there is a subtle issue with the way I wrote the code and it all lies in a three letter keyword &#8216;def'
+Not very complex. It turns out though that there is a subtle issue with the way I wrote the code and it all lies in a three letter keyword 'def'
 
-You can read a full description of the [meaning of &#8216;def'][7] if you would like to do so, but it boils down the following: NOT putting def in front of variable definitions in Groovy is *almost* like if the variable were global, by putting &#8216;def' in front of the variable declaration, it refines the scope of the variable to be local. Without the &#8216;def' in front of doOutput, when I called the method recursively and the value of doOutput was set to true, it retained that value once it got back from the recursive call and so, the ending curly brace was rendered. 
+You can read a full description of the [meaning of 'def'][7] if you would like to do so, but it boils down the following: NOT putting def in front of variable definitions in Groovy is *almost* like if the variable were global, by putting 'def' in front of the variable declaration, it refines the scope of the variable to be local. Without the 'def' in front of doOutput, when I called the method recursively and the value of doOutput was set to true, it retained that value once it got back from the recursive call and so, the ending curly brace was rendered. 
 
-Once I figured that out, I added &#8216;def' in front of some key variables, and things worked perfectly.
+Once I figured that out, I added 'def' in front of some key variables, and things worked perfectly.
 
 jelly2groovy is now working on several tags and does a good job of converting things over, obviously there are still tags I don't handle and things I haven't tried yet (taglibs!) but its coming along nicely.
 
