@@ -17,7 +17,7 @@ I decided that the unittest module for Python would do a great job of managing t
 
 I’m going to take you through the design and implementation of an application similar to that which I use at work to help our hardware team debug boards. It will not be the exact application I use at work, but will give you an idea of some of the simple, yet powerful things you can do with IronPython.
 
-![Testermatic]({{ site.url }}/uploads/2012/02/image.png)
+![Testermatic]({{ site.url }}/assets/2012/02/image.png)
 
 The UI is very simple: a simple menu with a single entry (File > Exit), a toolbar with four buttons, a listview that shows the currently loaded set of tests and an output window for the test output. Here you can see I loaded the test_datetime.py file into the GUI to run the datetime tests (and sadly it looks like there are failures in IronPython’s datetime module!).
 
@@ -209,7 +209,7 @@ The last item (runTests) is the method that is called by the host application to
 
 So, let’s look at how all of this gets pulled together.
 
-![Testermatic Toolbar]({{ site.url }}/uploads/2012/02/testermatic_toolbar.png)
+![Testermatic Toolbar]({{ site.url }}/assets/2012/02/testermatic_toolbar.png)
 
 &nbsp;
 
@@ -304,10 +304,10 @@ The third item on the toolbar is just a reload button. This is helpful if you ar
 
 The final button in the toolbar is a simple little email capability, because when something fails its always nice to notify people about it. The button displays an email form as shown below to allow the user to enter To and From addresses as well as a message. The output from the tests will be added after the message and sent to both the To and From addresses.
 
-![Email Form]({{ site.url }}/uploads/2012/02/testermatic_emailform.png)
+![Email Form]({{ site.url }}/assets/2012/02/testermatic_emailform.png)
 
 Now, do I use the application at work to run normal Python unit tests? No, as I mentioned before, this was mainly to allow the hardware team at my work to develop simple tests to quickly triage issues with the boards. They can quickly modify the test for special circumstances and run the whole suite of tests again. It also allows them to send the report to another person so they can review the test run.
 
 I hope this simple little application has shown you how easy it is to incorporate IronPython into your application. I attached the project for this application below so you can download it and play around with it.
 
-[Testermatic Project]({{ site.url }}/uploads/2012/02/Testermatic.zip)
+[Testermatic Project]({{ site.url }}/assets/2012/02/Testermatic.zip)
