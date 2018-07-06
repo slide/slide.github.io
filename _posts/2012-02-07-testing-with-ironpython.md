@@ -17,7 +17,7 @@ I decided that the unittest module for Python would do a great job of managing t
 
 I’m going to take you through the design and implementation of an application similar to that which I use at work to help our hardware team debug boards. It will not be the exact application I use at work, but will give you an idea of some of the simple, yet powerful things you can do with IronPython.
 
-[<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="http://earl-of-code.com/wp-content/uploads/2012/02/image_thumb.png" alt="image" width="569" height="416" border="0" />][1]
+![Testermatic]({{ site.url }}/uploads/2012/02/image.png)
 
 The UI is very simple: a simple menu with a single entry (File > Exit), a toolbar with four buttons, a listview that shows the currently loaded set of tests and an output window for the test output. Here you can see I loaded the test_datetime.py file into the GUI to run the datetime tests (and sadly it looks like there are failures in IronPython’s datetime module!).
 
@@ -46,8 +46,8 @@ We need an execution engine.For this application, I am only planning on supporti
 
 Most often when I am embedding IronPython into an application, I will have a method to initialize the engine and setup any paths I may need, pre-import some modules and do various other initialization steps. Here is the InitializeEngine method.
 
-<noscript>
-  <pre><code class="language-c# c#">void InitializeEngine() {
+```csharp
+void InitializeEngine() {
      // first clear out anything we have now
      if (_scope != null)
          _scope = null;
@@ -77,15 +77,14 @@ Most often when I am embedding IronPython into an application, I will have a met
      // import some default stuff.
      Import("sys", "os", "unittest", "testermatic");
      _stdout.WriteLine("Ready...");
-}</code></pre>
-</noscript>
+}```
 
 A few things of note. You can see the creation of a ScriptScope object as well as the ScriptEngine object we already talked about. This ScriptScope can be thought of as the \_\_main\_\_ module for the execution of the Python code. With IronPython you can create multiple ScriptScopes per engine and execute your code in any of them and they are partially self-contained.
 
 The code is also creating and setting up the stdout and stderr handlers for the ScriptEngine. This was an easy way to run the unit tests and get their output (since the default test running just prints the results to the console using the Python print statement). The OutputStream implementation is fairly simple and is shown below.
 
-<noscript>
-  <pre><code class="language-c# c#">using System;
+```csharp
+using System;
 using System.IO;
 using System.Text;
 
@@ -129,15 +128,14 @@ namespace Boardom {
         }
     }
 }
-</code></pre>
-</noscript>
+```
 
 It uses events to send text to the main form when something is written to the stream. The InitializeEngine then sets the stdout and stderr for the ScriptEngine; now all text written to either stdout or stderr will be redirected and displayed in the output area.
 
 Now that an engine is setup, and the stdout and stderr output is redirected, the InitializeEngine method pre-imports a few modules so that the script writer doesn’t need to do so. The first three (sys, os, and unittest) are standard Python modules that come in the Lib directory of the IronPython distribution. The last one is a helper module used to help enumerate and execute the unit tests.
 
-<noscript>
-  <pre><code class="language-python python">import clr, unittest, sys
+```python
+import clr, unittest, sys
 
 class TestermaticTestCase(unittest.TestCase):
     def __init__(self, testcase):
@@ -177,7 +175,6 @@ class TestermaticTestCase(unittest.TestCase):
         return result
         
 
-
 def getTests(prefix='test'):
     """ Finds all tests in all loaded modules, except for certain predefined modules """
     tests = []
@@ -201,8 +198,8 @@ def runTests(test_list, complete_func=None):
             test.addListener(complete_func)			
         suite.addTest(test)	
     
-    return unittest.TextTestRunner().run(suite)</code></pre>
-</noscript>
+    return unittest.TextTestRunner().run(suite)
+```
 
 The first item defined is a class which wraps around unittest tests that are found. It provides a mechanism to add listeners (callbacks) for the end of a test. This is how the GUI is updated when a test completes (color change for pass/fail status, etc.).
 
@@ -212,7 +209,7 @@ The last item (runTests) is the method that is called by the host application to
 
 So, let’s look at how all of this gets pulled together.
 
-[<img class="size-full wp-image-119 alignleft" title="Testermatic Toolbar" src="http://earl-of-code.com/wp-content/uploads/2012/02/testermatic_toolbar.png" alt="Testermatic Toolbar" width="113" height="24" />][2]
+![Testermatic Toolbar]({{ site.url }}/uploads/2012/02/testermatic_toolbar.png)
 
 &nbsp;
 
@@ -220,8 +217,8 @@ So, let’s look at how all of this gets pulled together.
 
 The toolbar on the Testermatic application has four buttons. The first is used to load a new set of tests. It shows an OpenFileDialog and once the user selects a Python file (*.py) it will enumerate the tests in the module and populate the list of tests. It uses the method below to load the tests.
 
-<noscript>
-  <pre><code class="language-c# c#">/// &lt;summary&gt;
+```csharp
+/// &lt;summary&gt;
 /// Imports the file and then searches for tests within loaded modules.
 /// &lt;/summary&gt;
 /// &lt;param name="file"&gt;The file to import&lt;/param&gt;
@@ -253,13 +250,13 @@ void LoadTests(string file) {
 
     _current_test_file = file;
     _stdout.WriteLine("Ready...");
-}</code></pre>
-</noscript>
+}
+```
 
 The Import method is as follows
 
-<noscript>
-  <pre><code class="language-c# c#">void Import(params string[] module_names) {
+```csharp
+void Import(params string[] module_names) {
     foreach (string module_name in module_names) {
          _stdout.WriteLine("importing {0}...", module_name);
          try {
@@ -270,13 +267,13 @@ The Import method is as follows
              _stdout.WriteLine("Exception importing {0} - {1}", module_name, ex.Message);
          }
      }
-}</code></pre>
-</noscript>
+}
+```
 
 The second button on the toolbar is used to actually run the tests. It creates a List (Python list) using the items in the ListView that are checked (remember the test object &#8212; the Python test object &#8212; was assigned to the .Tag property of each ListViewItem so it is easy to pull out).
 
-<noscript>
-  <pre><code class="language-c# c#">/// &lt;summary&gt;
+```csharp
+/// &lt;summary&gt;
 /// Runs the tests in the given test list.
 /// &lt;/summary&gt;
 /// &lt;param name="test_list"&gt;&lt;/param&gt;
@@ -292,14 +289,14 @@ void RunTests(List test_list) {
     } catch (Exception ex) {
         _stderr.WriteLine("Error running tests - {0}", ex.ToString());
     }
-}</code></pre>
-</noscript>
+}
+```
 
 You can see that this is interacting with the Python code in a different way than was done to retrieve the list of tests. This retrieves a ScriptScope (think module) object for the testermatic Python module shown earlier. It then gets the runTests method from that module and since it is a dynamic, it can call it just like a function. The TestCompleteDelegate is the callback for when the test completes.
 
-<noscript>
-  <pre><code class="language-c# c#">delegate object TestsCompleteDelegate(object sender, int num_tests, List failures, List errors);</code></pre>
-</noscript>
+```csharp
+delegate object TestsCompleteDelegate(object sender, int num_tests, List failures, List errors);
+```
 
 The TestComplete method which is called just updates the UI based on which tests passed, which tests failed and which tests had an error (green for pass, red for fail, purple for error conditions).
 
@@ -307,17 +304,10 @@ The third item on the toolbar is just a reload button. This is helpful if you ar
 
 The final button in the toolbar is a simple little email capability, because when something fails its always nice to notify people about it. The button displays an email form as shown below to allow the user to enter To and From addresses as well as a message. The output from the tests will be added after the message and sent to both the To and From addresses.
 
-[<img class="alignnone size-full wp-image-129" title="Email Form" src="http://earl-of-code.com/wp-content/uploads/2012/02/testermatic_emailform.png" alt="Email Form" width="777" height="508" />][3]
+![Email Form]({{ site.url }}/uploads/2012/02/testermatic_emailform.png)
 
 Now, do I use the application at work to run normal Python unit tests? No, as I mentioned before, this was mainly to allow the hardware team at my work to develop simple tests to quickly triage issues with the boards. They can quickly modify the test for special circumstances and run the whole suite of tests again. It also allows them to send the report to another person so they can review the test run.
 
 I hope this simple little application has shown you how easy it is to incorporate IronPython into your application. I attached the project for this application below so you can download it and play around with it.
 
-[Testermatic Project][4]
-
-
-
- [1]: http://earl-of-code.com/wp-content/uploads/2012/02/image.png
- [2]: http://earl-of-code.com/wp-content/uploads/2012/02/testermatic_toolbar.png
- [3]: http://earl-of-code.com/wp-content/uploads/2012/02/testermatic_emailform.png
- [4]: http://earl-of-code.com/wp-content/uploads/2012/02/Testermatic.zip
+[Testermatic Project]({{ site.url }}/uploads/2012/02/Testermatic.zip)
