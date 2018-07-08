@@ -5,8 +5,6 @@ layout: post
 permalink: /2012/02/testing-with-ironpython/
 tweet_this_url:
   - http://is.gd/38Rpeo
-wp_plus_one_redirect:
-  - ""
 categories:
   - 'C#'
   - IronPython
@@ -67,7 +65,7 @@ void InitializeEngine() {
      _engine.Runtime.IO.SetErrorOutput(_stderr, Encoding.ASCII);
 
      // add the local python installation libs
-     ICollection&lt;string&gt; searchPaths = _engine.GetSearchPaths();
+     var searchPaths = _engine.GetSearchPaths();
      searchPaths.Add(Path.Combine(PYTHON_DIR, "Lib"));
      searchPaths.Add(Path.Combine(Path.Combine(PYTHON_DIR, "Lib"), "site-packages"));
      searchPaths.Add(Path.GetDirectoryName(GetType().Assembly.Location));
@@ -77,7 +75,8 @@ void InitializeEngine() {
      // import some default stuff.
      Import("sys", "os", "unittest", "testermatic");
      _stdout.WriteLine("Ready...");
-}```
+}
+```
 
 A few things of note. You can see the creation of a ScriptScope object as well as the ScriptEngine object we already talked about. This ScriptScope can be thought of as the \_\_main\_\_ module for the execution of the Python code. With IronPython you can create multiple ScriptScopes per engine and execute your code in any of them and they are partially self-contained.
 
@@ -101,7 +100,7 @@ namespace Boardom {
             }
         }
 
-        public event EventHandler&lt;OutputEventArgs&gt; Output;
+        public event EventHandler<OutputEventArgs> Output;
 
         public OutputStream()
             : base() {
@@ -218,14 +217,14 @@ So, let’s look at how all of this gets pulled together.
 The toolbar on the Testermatic application has four buttons. The first is used to load a new set of tests. It shows an OpenFileDialog and once the user selects a Python file (*.py) it will enumerate the tests in the module and populate the list of tests. It uses the method below to load the tests.
 
 ```csharp
-/// &lt;summary&gt;
+/// <summary>
 /// Imports the file and then searches for tests within loaded modules.
-/// &lt;/summary&gt;
-/// &lt;param name="file"&gt;The file to import&lt;/param&gt;
+/// </summary>
+/// <param name="file">The file to import</param>
 void LoadTests(string file) {
     InitializeEngine();
 
-    ICollection&lt;string&gt; searchPaths = _engine.GetSearchPaths();
+    var searchPaths = _engine.GetSearchPaths();
     searchPaths.Add(Path.GetDirectoryName(file));
 
     _engine.SetSearchPaths(searchPaths);
@@ -235,7 +234,7 @@ void LoadTests(string file) {
     Import(module_name);
 
     // execute the Python method in the testermatic module to get the list of tests
-    List tests = _engine.Execute&lt;List&gt;("testermatic.getTests()", _scope);
+    List tests = _engine.Execute<List>("testermatic.getTests()", _scope);
 
     test_list.Items.Clear();
     // enumerate through the tests and add a ListViewItem for each one.
@@ -258,13 +257,13 @@ The Import method is as follows
 ```csharp
 void Import(params string[] module_names) {
     foreach (string module_name in module_names) {
-         _stdout.WriteLine("importing {0}...", module_name);
+         _stdout.WriteLine($"importing {module_name}...");
          try {
              _scope.SetVariable(module_name, _engine.ImportModule(module_name));
          } catch (ImportException ex) {
-             _stdout.WriteLine("Could not import {0} - {1}", module_name, ex.Message);
+             _stdout.WriteLine($"Could not import {module_name} - {ex.Message}");
          } catch (Exception ex) {
-             _stdout.WriteLine("Exception importing {0} - {1}", module_name, ex.Message);
+             _stdout.WriteLine($"Exception importing {module_name} - {ex.Message}");
          }
      }
 }
@@ -273,10 +272,10 @@ void Import(params string[] module_names) {
 The second button on the toolbar is used to actually run the tests. It creates a List (Python list) using the items in the ListView that are checked (remember the test object &#8212; the Python test object &#8212; was assigned to the .Tag property of each ListViewItem so it is easy to pull out).
 
 ```csharp
-/// &lt;summary&gt;
+/// <summary>
 /// Runs the tests in the given test list.
-/// &lt;/summary&gt;
-/// &lt;param name="test_list"&gt;&lt;/param&gt;
+/// </summary>
+/// <param name="test_list"></param>
 void RunTests(List test_list) {
     try {
         // call our utility method to run the selected tests
